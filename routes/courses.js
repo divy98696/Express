@@ -9,8 +9,8 @@ const {
 
 // Advanced Result Filtering
 const Course = require('../models/Course');
-const advancedResult = require('../middleware/advancedResult');
 
+const advancedResult = require('../middleware/advancedResult');
 const { protect, authorize } = require('../middleware/auth');
 
 const router = express.Router({ mergeParams: true });
