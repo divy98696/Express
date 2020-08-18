@@ -55,7 +55,7 @@ app.use(limiter);
 // Prevent http param pollution
 app.use(hpp());
 
-// Public API
+// Enable Cors
 app.use(cors());
 
 //Dev logging middleware
