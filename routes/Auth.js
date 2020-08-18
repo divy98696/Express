@@ -2,6 +2,7 @@ const express = require('express');
 const {
   Register,
   Login,
+  Logout,
   getMe,
   forgotPassword,
   resetPassword,
@@ -14,6 +15,7 @@ const { protect } = require('../middleware/auth');
 
 router.post('/register', Register);
 router.post('/login', Login);
+router.get('/logout', Logout);
 router.get('/me', protect, getMe);
 router.put('/updatedetails', protect, updatedetails);
 router.put('/updatepassword', protect, updatepassword);
